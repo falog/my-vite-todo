@@ -1,8 +1,13 @@
+<script setup>
+import TheHeader from './components/TheHeader.vue';
+import TheFooter from './components/TheFooter.vue';
+</script>
+
 <template>
   <div class="wrap">
-    <div>ヘッダー</div>
+    <TheHeader />
     <main class="main">メイン</main>
-    <div>フッター</div>
+    <TheFooter />
   </div>
 </template>
 
@@ -20,6 +25,7 @@
 }
 
 .main {
+  text-align: left;
   flex: 1;
   width: 100%;
 }
